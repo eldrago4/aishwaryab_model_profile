@@ -75,7 +75,7 @@ th {
   width: 100%;
   height: 100%;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 .frontApp .Page .twoColumns .left,
@@ -1205,6 +1205,19 @@ th {
     margin-right: 0;
   }
 }
+
+@media (width > 514px) {
+  #PAMjRl59C6xvXumt {
+    font-size: 1.2em;
+  }
+}
+
+ @media (max-width: 514px) {
+  #kMwLIAh2BWQIA1DH, #PAMjRl59C6xvXumt {
+    font-size: 10px;
+  }
+ }
+
 @media only screen and (max-width: 999px) {
   .frontApp .Page .footer1,
   .frontApp .Page .submenu4,
@@ -1493,7 +1506,7 @@ th {
 }
 @media only screen and (max-width: 1000px) {
   .frontApp .Logo a {
-    text-align: center;
+    text-align: left;
     line-height: 100%;
   }
 }
@@ -15357,3 +15370,4 @@ img.lazy-img[lazy="loaded"] {
   color: inherit;
   font-family: inherit;
 }
+ 
