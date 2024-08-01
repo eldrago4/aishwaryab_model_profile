@@ -6121,6 +6121,7 @@ body.simulateMobileView .frontApp .centered2 .first {
 .frontApp .borderTop3 .second {
   align-items: flex-end;
 }
+
 .frontApp .borderTop1 .hamburger,
 .frontApp .borderTop2 .hamburger,
 .frontApp .borderTop3 .hamburger {
@@ -6714,6 +6715,7 @@ body.simulateMobileView .frontApp .hidden7 .pbMenu.first {
 .frontApp .hidden4 {
   justify-content: center;
 }
+
 .frontApp .hidden3 .hamburger,
 .frontApp .hidden4 .hamburger {
   position: absolute;
@@ -8591,7 +8593,7 @@ body.simulateMobileView .frontApp .Page.hasLeftMenu .mainContentMenuAdjusted {
     top: 0;
     left: 0;
   }
-  .frontApp .Page.hasLeftMenu .MainMenu.open {
+  .frontApp .Page.hasLeftMenu {
     height: 100vh;
   }
   .frontApp .Page.hasLeftMenu .MainMenu .hamburger {
