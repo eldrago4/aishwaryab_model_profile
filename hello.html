@@ -36,8 +36,8 @@
 
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="css/main.css" />
 
+    <link rel="stylesheet" href="css/mobile-menu.css" />
     <style type="text/css">
         .Page {
             font-family: 'Montserrat', sans-serif;
@@ -303,6 +303,7 @@
     <link rel="stylesheet" href="css/skeleton-auto.css" />
 
     <!-- Brand Styles -->
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="/css/hello.css">
 
     <!-- Favicon
@@ -326,6 +327,7 @@
         <div class="Page">
             <div class="navWrapper positionDefault" style="--drop-down-color: #ffffff">
                 <!---->
+
                 <nav data-type="MainMenu" id="MainMenuId" data-bgimg="" class="MainMenu pbEdit inViewPoint borderTop1">
                     <div data-elements-position="top" class="pbMenu pbSortable pbElements first">
                         <h1 data-type="Logo" id="MAINMENULOGO" class="Logo pbEdit fade-in" style="
@@ -348,14 +350,14 @@
                     </div>
                     <div data-elements-position="bottom" class="pbMenu pbSortable pbElements second">
                         <div data-type="MainMenuLinks" id="MAINMENULINKS" class="MainMenuLinks fade-in" style="
-                      margin-top: 1em;
-                      font-size: 1.56em;
-                      letter-spacing: 0.04em;
-                      font-weight: lighter;
-                      text-transform: none;
-                      text-align: right;
-                      align-self: flex-end;
-                    ">
+                            margin-top: 1em;
+                            font-size: 1.56em;
+                            letter-spacing: 0.04em;
+                            font-weight: lighter;
+                            text-transform: none;
+                            text-align: right;
+                            align-self: flex-end;
+                        ">
                             <div class="linkWrapper">
                                 <!----><a href="/polaroids.html" class="" target="" id="YQNr11wmJMqcooUZ"><span
                                         class="linkSpan">BOOK</span></a><!---->
@@ -374,15 +376,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hamburger">
+                    <div class="hamburger" onclick="toggleMenu()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
+
                     </div>
                 </nav>
+
             </div>
+ 
             <section class="dynamicGridWrapper">
-                <div class="dynamicGrid"> </div>
+                <div id="AGtj3LS93HjyMn10" class="Gallery pbEdit dynamicGrid cover1 hover-opacity">
+                </div>
             </section>
 
             <script>
@@ -451,57 +457,60 @@
 
 
             </script>
+
+            
         
+            <script src="/workers/lightbox.js"></script>
         <!-- source-js-1 -->
-        <script type="text/javascript" async="" charset="utf-8"
-            src="https://www.gstatic.com/recaptcha/releases/Xv-KF0LlBu_a0FJ9I5YSlX5m/recaptcha__en.js"
-            crossorigin="anonymous"
-            integrity="sha384-fSSiXscmlnEMPiEO6UCIYlhDpU414UbO5yxw7QYGkaD/qBSXeuzmDGEqL4uIOnq8"></script>
-        <script src="https://d2z18g6bj3mwjn.cloudfront.net/pb4/_output/pb4.out.front1.ver.1719319466034.js"></script>
-        <!-- /source-js-1 -->
+            <script type="text/javascript" async="" charset="utf-8"
+                src="https://www.gstatic.com/recaptcha/releases/Xv-KF0LlBu_a0FJ9I5YSlX5m/recaptcha__en.js"
+                crossorigin="anonymous"
+                integrity="sha384-fSSiXscmlnEMPiEO6UCIYlhDpU414UbO5yxw7QYGkaD/qBSXeuzmDGEqL4uIOnq8"></script>
+            <script src="https://d2z18g6bj3mwjn.cloudfront.net/pb4/_output/pb4.out.front1.ver.1719319466034.js"></script>
+            <!-- /source-js-1 -->
 
 
-        <script type="application/ld+json" id="jsonLd">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "ABOUT",
-            "description": "",
-            "url": "https://aishwaryabmodelprofile-eldrago4s-projects.vercel.app/about.html"
-        }
-    </script>
-
-        <link rel="alternate" type="application/rss+xml" title="" href="/rss" />
-
-        <!-- source-js -->
-        <script src="https://d2z18g6bj3mwjn.cloudfront.net/pb4/_output/pb4.out.front.ver.1719319466033.js"></script>
-        <!-- /source-js -->
-
-        <script>
-            if (site.state.DisableRightClick) {
-                document.addEventListener("contextmenu", (event) =>
-                    event.preventDefault()
-                );
+            <script type="application/ld+json" id="jsonLd">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "ABOUT",
+                "description": "",
+                "url": "https://aishwaryabmodelprofile-eldrago4s-projects.vercel.app/about.html"
             }
-        </script>
+            </script>
 
-        <script>
-            if ("scrollRestoration" in history) {
-                history.scrollRestoration = "manual";
-            }
-        </script>
-        <div class="routerViewWrapper SiteFooter">
-            <div class="sectionWrapper mainContentMenuAdjusted inViewPoint">
-                <section id="uDJ1GzMMia0w4VyC" data-type="Section" data-elements-position="top"
-                    class="Section pbEdit pbElements pbSortable footer0"
-                    style="justify-content: center; align-items: center; padding-bottom: 2vh; padding-top: 2vh;">
-                    <div data-type="ShortText" id="PAMjRl59C6xvXumt" class="ShortText pbEdit fade-in"
-                        style="text-align: center;">© Aishwarya B. All rights reserved.</div>
-                </section>
+            <link rel="alternate" type="application/rss+xml" title="" href="/rss" />
+
+            <!-- source-js -->
+            <script src="https://d2z18g6bj3mwjn.cloudfront.net/pb4/_output/pb4.out.front.ver.1719319466033.js"></script>
+            <!-- /source-js -->
+
+            <script>
+                if (site.state.DisableRightClick) {
+                    document.addEventListener("contextmenu", (event) =>
+                        event.preventDefault()
+                    );
+                }
+            </script>
+            <script>
+                if ("scrollRestoration" in history) {
+                    history.scrollRestoration = "manual";
+                }
+            </script>
+            <div class="routerViewWrapper SiteFooter">
+                <div class="sectionWrapper mainContentMenuAdjusted inViewPoint">
+                    <section id="uDJ1GzMMia0w4VyC" data-type="Section" data-elements-position="top"
+                        class="Section pbEdit pbElements pbSortable footer0"
+                        style="justify-content: center; align-items: center; padding-bottom: 2vh; padding-top: 2vh;">
+                        <div data-type="ShortText" id="PAMjRl59C6xvXumt" class="ShortText pbEdit fade-in"
+                            style="text-align: center;">© Aishwarya B. All rights reserved.</div>
+                    </section>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
-    </div>
+        <script src="workers/hamburger.js"></script>
 </body>
 
 </html>

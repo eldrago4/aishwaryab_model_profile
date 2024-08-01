@@ -1,0 +1,26 @@
+
+.mobile-menu {
+    display: none; 
+    position: static;
+    top: calc(100% + 10px); 
+    right: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .mobile-menu a {
+    display: flex;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;  
+  }
+
+
+/* Style the open menu */
+.MainMenu.open #menuLinks {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* ... other styles for the open menu ... */
+}
