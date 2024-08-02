@@ -1,26 +1,93 @@
-
-.mobile-menu {
-    display: none; 
-    position: static;
-    top: calc(100% + 10px); 
-    right: 20px; 
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+@media (max-width: 1000px) {
+ /* Hamburger Menu Styles */
+  .hamburger {
+    cursor: pointer;
+    display: flex; /* Initially hidden on larger screens */
+    z-index: 2;  
   }
-  
-  .mobile-menu a {
-    display: flex;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
+
+  .bar1, .bar2, .bar3 {
+    width: 35px; 
+    height: 5px; 
+    background-color: black; 
+    margin: 6px 0;
+    transition: 0.4s; 
+  }
+
+  /* Mobile Menu Styles (Visible on Click) */
+  .MainMenu .second { /* Hide menu links by default on all screen sizes */
+    display: none !important; 
+  }
+
+  /* Overlay Styles */
+  .menu-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 9; /* Ensure it's behind the menu */
+  }
+
+  .MainMenu.open .menu-overlay {
+    display: block;
+  }
+
+  .MainMenu.open .second {
+    display: flex !important; /* Show the menu links when 'open' class is added */
+    flex-direction: column; /* Arrange links vertically */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    z-index: 10; /* Ensure it's on top of the overlay */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .MainMenu.open .linkWrapper {
+    margin-bottom: 15px; /* Add spacing between links */
+  }
+
+  .MainMenu.open .linkSpan { 
+    color: black; 
+    font-size: 1.2em; /* Adjust font size as needed */
+  }
+
+  /* Close Button Styles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2em;
     color: black;
-    font-size: 1.2em;  
+    cursor: pointer;
+  }
+
+  /* Hamburger Icon Animation */
+  .MainMenu.open .hamburger {
+  display: block; 
+  }
+
+  .MainMenu.open .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px); 
+  }
+
+  .MainMenu.open .bar2 {
+  opacity: 0; 
+  }
+
+  .MainMenu.open .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px); 
   }
 
 
-/* Style the open menu */
-.MainMenu.open #menuLinks {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* ... other styles for the open menu ... */
+  /* Media Queries for Responsiveness */
+
+  .MainMenu .hamburger {
+      display: block;  
+  }
 }
