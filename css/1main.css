@@ -904,12 +904,14 @@ th {
 .frontApp .Page .coverTemp.cover8 .Links span {
   margin-left: 2.7em;
   margin-right: 2.7em;
+  outline: none;
 }
 @media only screen and (max-width: 999px) {
   .frontApp .Page .coverTemp.cover8 .Links a,
   .frontApp .Page .coverTemp.cover8 .Links span {
     margin-left: 0;
     margin-right: 0;
+    outline: none;
   }
 }
 @media only screen and (max-width: 999px) {
@@ -1208,12 +1210,18 @@ th {
 
 @media (width > 514px) {
   #PAMjRl59C6xvXumt {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
  @media (max-width: 514px) {
-  #kMwLIAh2BWQIA1DH, #PAMjRl59C6xvXumt {
+  #kMwLIAh2BWQIA1DH{
+    font-size: 15px;
+  }
+ }
+
+ @media (max-width: 514px) {
+ #PAMjRl59C6xvXumt {
     font-size: 10px;
   }
  }
@@ -1431,6 +1439,7 @@ th {
 .frontApp a {
   color: inherit;
   text-decoration: inherit;
+  outline: none;
 }
 .frontApp .Section {
   border-bottom-style: solid;
@@ -1480,14 +1489,6 @@ th {
     width: 100%;
   }
 }
-.frontApp .Page {
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  letter-spacing: normal;
-  text-transform: none;
-  line-height: normal;
-}
 .frontApp .Header,
 .frontApp .Header2,
 .frontApp .Header3 {
@@ -1501,13 +1502,11 @@ th {
   border-top: 1px solid;
   width: 100%;
 }
-.frontApp .Logo a {
-  display: block;
-}
 @media only screen and (max-width: 1000px) {
   .frontApp .Logo a {
     text-align: left;
     line-height: 100%;
+    outline: none;
   }
 }
 .frontApp .Logo .imgLogo {
@@ -2069,6 +2068,7 @@ th {
 .frontApp .MainMenuLinks.left1 .iconLinksWrapper a:first-child {
   margin-right: 0;
   margin-left: 0;
+  outline: none;
 }
 .frontApp .MainMenuLinks .left2 .iconLinksWrapper .icon,
 .frontApp .MainMenuLinks .left3 .iconLinksWrapper .icon,

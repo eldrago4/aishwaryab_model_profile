@@ -42,6 +42,11 @@ img {
 .frontApp .Page .twoColumns.imageLeft .left img {
   max-width: 100%;
 }
+
+#PAMjRl59C6xvXumt {
+  font-size: 10px;
+}
+
 @media only screen and (max-width: 999px) {
   .frontApp .Page .twoColumns {
     display: block;
@@ -57,12 +62,6 @@ img {
   }
 }
 
-@media (width > 514px) {
-  #PAMjRl59C6xvXumt {
-    font-size: 1.2em;
-  }
-}
-
  @media (max-width: 514px) {
   #PAMjRl59C6xvXumt {
     font-size: 10px;
@@ -71,6 +70,7 @@ img {
 .frontApp a {
   color: inherit;
   text-decoration: inherit;
+  outline: none;
 }
 .frontApp .Section {
   border-bottom-style: solid;
@@ -610,9 +610,16 @@ img {
   background-size: cover;
   background-color: inherit;
 }
+
+@media screen and (width >= 1000px) {
+  #cJfxbunyffeH4NLD{
+    font-size: 1.1em;
+  }
+}
+
 @media screen and (width < 430px) {
   #cJfxbunyffeH4NLD{
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 1000px) {
