@@ -2,7 +2,7 @@
  /* Hamburger Menu Styles */
   .hamburger {
     cursor: pointer;
-    display: flex; /* Initially hidden on larger screens */
+    display: flex; 
     z-index: 2;  
   }
 
@@ -14,14 +14,14 @@
     transition: 0.4s; 
   }
 
-  /* Mobile Menu Styles (Visible on Click) */
-  .MainMenu .second { /* Hide menu links by default on all screen sizes */
+
+  .MainMenu .second { 
     display: none !important; 
   }
 
-  /* Overlay Styles */
+
   .menu-overlay {
-    display: none; /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -36,33 +36,34 @@
   }
 
   .MainMenu.open .second {
-    display: flex !important; /* Show the menu links when 'open' class is added */
-    flex-direction: column; /* Arrange links vertically */
+    display: flex !important; 
+    flex-direction: column; 
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px; /* Adjust width as needed */
+    width: 300px; 
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
-    z-index: 10; /* Ensure it's on top of the overlay */
-    padding: 20px; /* Add padding for better spacing */
+    background-color: rgba(255, 255, 255, 0.8); 
+    z-index: 10; 
+    padding: 20px; 
   }
 
   .MainMenu.open .linkWrapper {
-    margin-bottom: 15px; /* Add spacing between links */
+    margin-bottom: 15px; 
   }
 
   .MainMenu.open .linkSpan { 
     color: black; 
-    font-size: 1.2em; /* Adjust font size as needed */
+    font-size: 1.2em; 
   }
 
-  /* Close Button Styles */
+
   .close-button {
-    position: absolute;
+    position: sticky;
     top: 10px;
-    right: 10px;
-    font-size: 2em;
+    right: 15px;
+    font-size: 6em;
+    font-weight: 100;
     color: black;
     cursor: pointer;
   }
